@@ -14,6 +14,14 @@ def encode(password):
 
     return str(up_three)
 
+def decoder(string):  # Kinnara's decoder function
+    decoded = []
+    for char in string:
+        decoded.append(int(char)-3)
+    new_decoded = ""
+    for num in decoded:
+        new_decoded += str(num)
+    return new_decoded
 
 def main():
 
